@@ -183,13 +183,6 @@ nav {
   display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="services-box"] {
-    width: 100%;
-  }
-}
-
 /*  inline block */
 nav a {
   display: flex;
@@ -246,10 +239,6 @@ nav a {
 
 .getStarted:active {
   transform: perspective(1px) translateZ(0);
-}
-
-.header-img {
-  /* border: 2px solid pink; */
 }
 
 /* all contents below the header and title will be contained in below classes */
@@ -397,4 +386,112 @@ ul li {
   cursor: help;
   border: 2px solid lightgrey;
   border-radius: 5%;
+}
+
+
+@media (max-width: 800px) {
+
+    body {
+        width: 100%;
+    }
+    
+    .top {
+        width: 100%;
+        margin: 0;
+        padding: 3% 0 1%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    nav a {
+        margin: 0 2px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .welcome {
+        justify-content: center;
+    }
+
+    .pars {
+        width: 45%;
+        margin: 3%;
+    }
+
+    .pars2 {
+        width: 31%;
+        margin: 3%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+
+  
+    .top {
+        background: white;
+        width: 100%;
+        margin: 0;
+        padding: 3% 0 1%;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        position: absolute;
+    }
+
+    .logo {
+        background: white;
+        position: fixed;
+        margin:0 0 0 -18%;
+        z-index: 2;
+    }
+
+
+    nav {
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    nav button {
+        border: 1px solid white;
+        font-size: 15px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .welcome {
+        padding-top: 90%;
+        margin-left: 10%;
+        justify-content: center;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .pars, .pars2 {
+        width: 85%;
+        font-size: 14px;
+    }
+
+    .middle-img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    address {
+        font-size: 14px;
+    }
 }
