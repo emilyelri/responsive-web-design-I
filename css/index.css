@@ -388,6 +388,9 @@ ul li {
   border-radius: 5%;
 }
 
+.mobile-divider {
+    display: none;
+}
 
 @media (max-width: 800px) {
 
@@ -424,6 +427,15 @@ ul li {
         width: 31%;
         margin: 3%;
     }
+
+    .services {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .services-info-img {
+        width: 40%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -431,7 +443,6 @@ ul li {
         width: 100%;
     }
 
-  
     .top {
         background: white;
         width: 100%;
@@ -439,20 +450,20 @@ ul li {
         padding: 3% 0 1%;
         align-items: center;
         flex-direction: column-reverse;
-
+        border-color: white;
         position: absolute;
     }
 
     .logo {
         background: white;
         position: fixed;
-        margin:0 0 0 -18%;
+        width: 50%;
+        margin:-15px 0 0 -23%;
         z-index: 2;
     }
 
-
     nav {
-        margin-top: 10%;
+        margin-top: 7%;
         flex-direction: column;
         align-items: center;
         padding-bottom: 5px;
@@ -460,11 +471,16 @@ ul li {
 
     nav a {
         margin: 0;
+        line-height: 6px;
     }
 
     nav button {
         border: 1px solid white;
         font-size: 15px;
+    }
+
+    .mobile-divider {
+        display: flex;
     }
 
     .header-img {
@@ -493,5 +509,29 @@ ul li {
 
     address {
         font-size: 14px;
+    }
+
+    .services {
+        width: 90%;
+        padding-top: 50%;
+        margin-left: 5%;
+    }
+
+    .services-box {
+        width: 90%;
+        
+    }
+
+    .services-bottom {
+        width: 150%;
+        margin-left: -25%;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    .individual-prod {
+        width: 90%;
     }
 }
